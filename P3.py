@@ -18,7 +18,7 @@ for count in np.arange(0, 10, 0.1):
     if mf >= 3:
         print(f"Você precisa de, no mínimo, {p4: .2f} na p4 para ir para a AF")
         break
-for count in np.arange(0,10,0.1):
+for count in np.arange(0, 10, 0.1):
     AF = count + 0.1
     maf = (mf + AF) / 2
     if maf >= 5:
