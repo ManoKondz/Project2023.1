@@ -33,10 +33,11 @@ time.sleep(2)
 while True:
     print(linha())
     corpo("<O programa irá informar as notas das avaliação que você não realizou>")
-    corpo("Em caso de erro com o programa, informe o bug pela opção no menu principal ou entre em contato "
-          "com o email Nota.necessaria2023@gmail.com")
+    corpo("""   Em caso de erro com o programa, informe o bug pela opção no menu principal 
+                                        ou 
+            entre em contato com o email Nota.necessaria2023@gmail.com""")
     menu(["Primeira avaliação ", "Segunda avaliação", "Terceira avaliação", "Quarta avaliação",
-          "Reportar Bug/Sugestões para melhorias","", "Sair do Programa"])
+          "Reportar Bug/Sugestões para melhorias","Créditos", "Sair do Programa"])
 
 # Entrada
 
@@ -54,7 +55,7 @@ while True:
 
 # Números inexistentes
 
-    if opcao > 6 or opcao < 1:
+    if opcao > 7 or opcao < 1:
         print("Opção Inválida, selecione novamente")
         print(linha())
         time.sleep(0.5)
@@ -64,7 +65,7 @@ while True:
 
 # Desligar o programa
 
-    if opcao == 6:
+    if opcao == 7:
         print(
             """<Desligando aplicação>
         Aguarde..."""
@@ -347,6 +348,20 @@ while True:
 
 
         enviar_email()
+        print(linha())
+        print("Operação Concluída")
+        input("Confirme para voltar ao menu")
+        print("Retornando ao menu...")
+        time.sleep(2)
+
+# Créditos
+
+    if opcao == 6:
+        cabeçalho("Créditos")
+        print("Criado por: Enzo Gabriel (ManoKondz)")
+        print("Data de lançamento: 05/02/2023")
+        print("Versão: beta(v1.0)")
+        print("Agradecimentos: Matheus Pereira; Isaias do Amaral; João Vitor")6
         print(linha())
         print("Operação Concluída")
         input("Confirme para voltar ao menu")
