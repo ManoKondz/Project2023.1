@@ -28,12 +28,15 @@ def menu(lista):
 
 cabeçalho("Inicializando...")
 time.sleep(5)
-corpo("Qual nota você precisa para passar?")
+cabeçalho("Qual nota você precisa para passar?")
 time.sleep(2)
 while True:
     print(linha())
     corpo("<O programa irá informar as notas das avaliação que você não realizou>")
-    menu(["Primeira avaliação ", "Segunda avaliação", "Terceira avaliação", "Quarta avaliação", "Reportar Bug/Sugestões para melhorias", "Sair do Programa"])
+    corpo("Em caso de erro com o programa, informe o bug pela opção no menu principal ou entre em contato "
+          "com o email Nota.necessaria2023@gmail.com")
+    menu(["Primeira avaliação ", "Segunda avaliação", "Terceira avaliação", "Quarta avaliação",
+          "Reportar Bug/Sugestões para melhorias","", "Sair do Programa"])
 
 # Entrada
 
@@ -344,8 +347,8 @@ while True:
 
 
         enviar_email()
-    print(linha())
-    print("Operação Concluída")
-    input("Confirme para voltar ao menu")
-    print("Retornando ao menu...")
-    time.sleep(2)
+        print(linha())
+        print("Operação Concluída")
+        input("Confirme para voltar ao menu")
+        print("Retornando ao menu...")
+        time.sleep(2)
