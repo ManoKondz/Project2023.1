@@ -361,7 +361,7 @@ while True:
         print("Criado por: Enzo Gabriel (ManoKondz)")
         print("Data de lançamento: 05/02/2023")
         print("Versão: beta(v1.0)")
-        print("Agradecimentos: Matheus Pereira; Isaias do Amaral; João Vitor")6
+        print("Agradecimentos: Matheus Pereira; Isaias do Amaral; João Vitor")
         print(linha())
         print("Operação Concluída")
         input("Confirme para voltar ao menu")
