@@ -2,6 +2,7 @@ import numpy as np
 import smtplib
 import email.message
 import time
+from builtins import input
 
 # Funções importantes para o projeto
 
